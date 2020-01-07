@@ -6,7 +6,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  Container MyFruits(String imageValue,String friutName){
+  Container MyCard(String imageValue,String friutName){
   
   return Container(
                     width: 96.0,
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
              ///This is Card 1st
                   RaisedButton(
-                   child: MyFruits('assets/fruits/image7.jpg', "Flutter1"),
+                   child: MyCard('assets/fruits/image7.jpg', "Flutter1"),
                     onPressed: () => _onButtonPressed(),
                    ),
                   
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
              // This is card 2nd
                      RaisedButton(
-                   child: MyFruits('assets/fruits/image7.jpg', "Flutter2"),
+                   child: MyCard('assets/fruits/image7.jpg', "Flutter2"),
                     onPressed: () => _onButtonPressed(),
                    ),
                   
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
               // This is card 2nd
                      RaisedButton(
-                   child: MyFruits('assets/fruits/image7.jpg', "Flutter2"),
+                   child: MyCard('assets/fruits/image7.jpg', "Flutter2"),
                     onPressed: () => _onButtonPressed(),
                    ),
                   
@@ -82,8 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
 
-          
-              ]
+           ]
         
           ),
           ),
